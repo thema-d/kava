@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-12 gap-x-4">
     <div
-      class="col-span-2 flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
+      class="col-span-2 flex focus-within:border-light-primary border rounded-md px-2 space-x-1"
     >
       <span
         class="text-light-primary font-semibold text-xl flex items-center h-full"
@@ -15,7 +15,7 @@
       />
     </div>
     <div
-      class="col-span-3 flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
+      class="col-span-3 flex focus-within:border-light-primary border rounded-md px-2 space-x-1"
     >
       <date-picker
         class="w-full"
@@ -48,7 +48,7 @@
       </span>
     </div>
     <div
-      class="col-span-3 relative flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
+      class="col-span-3 relative flex focus-within:border-light-primary border rounded-md px-2 space-x-1"
     >
       <time-picker
         class="w-full"
@@ -86,7 +86,7 @@
       </span>
     </div>
     <div
-      class="col-span-4 relative flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
+      class="col-span-4 relative flex focus-within:border-light-primary border rounded-md px-2 space-x-1"
     >
       <span
         class="text-light-primary font-semibold text-xl flex items-center h-full"
