@@ -1,10 +1,16 @@
 // const theme = require("@tailwindcss/postcss7-compat/stubs/defaultConfig.stub");
+// const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        "light-primary": "var(--ff-337-b-primary)",
+        "dark-primary": "var(--dark-pink)"
+      }
+    }
   },
   variants: {
     extend: {

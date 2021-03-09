@@ -1,9 +1,10 @@
 <template>
   <div class="grid grid-cols-12 gap-x-4">
     <div
-      class="col-span-2 flex focus-within:border-red-300 border-2 rounded-md px-2 space-x-1"
+      class="col-span-2 flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
     >
-      <span class="text-red-400 font-semibold text-xl flex items-center h-full"
+      <span
+        class="text-light-primary font-semibold text-xl flex items-center h-full"
         >&euro;</span
       >
       <input
@@ -14,21 +15,21 @@
       />
     </div>
     <div
-      class="col-span-3 flex focus-within:border-red-300 border-2 rounded-md px-2 space-x-1"
+      class="col-span-3 flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
     >
       <date-picker
         class="w-full"
         @input="value => save({ attr: 'delivery_date', value })"
       >
         <input
-          class="search w-full py-2 px-1 text-gray-500 focus:outline-none focus:border-red-300"
+          class="search w-full py-2 px-1 text-gray-500 focus:outline-none focus:border-light-primary"
           type="text"
           readonly
           placeholder="Delivery Date"
         />
       </date-picker>
       <span
-        class="text-red-400 font-semibold text-xl flex items-center h-full px-2"
+        class="text-light-primary font-semibold text-xl flex items-center h-full px-2"
       >
         <svg
           class="w-5 h-5"
@@ -47,7 +48,7 @@
       </span>
     </div>
     <div
-      class="col-span-3 relative flex focus-within:border-red-300 border-2 rounded-md px-2 space-x-1"
+      class="col-span-3 relative flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
     >
       <time-picker
         class="w-full"
@@ -55,7 +56,7 @@
       >
         <template #default="{ actions, value }">
           <input
-            class="search w-full py-2 px-1 text-gray-500 focus:outline-none focus:border-red-300"
+            class="search w-full py-2 px-1 text-gray-500 focus:outline-none focus:border-light-primary"
             type="text"
             placeholder="Delivery Time"
             @keypress.prevent="e => e.preventDefault()"
@@ -66,7 +67,7 @@
         </template>
       </time-picker>
       <span
-        class="text-red-400 font-semibold text-xl flex items-center h-full px-2"
+        class="text-light-primary font-semibold text-xl flex items-center h-full px-2"
       >
         <svg
           class="w-5 h-5"
@@ -85,9 +86,11 @@
       </span>
     </div>
     <div
-      class="col-span-4 relative flex focus-within:border-red-300 border-2 rounded-md px-2 space-x-1"
+      class="col-span-4 relative flex focus-within:border-light-primary border-2 rounded-md px-2 space-x-1"
     >
-      <span class="text-red-400 font-semibold text-xl flex items-center h-full">
+      <span
+        class="text-light-primary font-semibold text-xl flex items-center h-full"
+      >
         <svg
           class="w-5 h-5"
           xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +107,7 @@
         </svg>
       </span>
       <input
-        class="search w-full py-2 px-1 text-gray-500 focus:outline-none focus:border-red-300"
+        class="search w-full py-2 px-1 text-gray-500 focus:outline-none focus:border-light-primary"
         type="text"
         placeholder="Message"
         @keyup.enter="save({ attr: 'message', value: $event.target.value })"

@@ -3,7 +3,7 @@
     <dropdown :data="filteredEmployees" :select="data => select(data)">
       <template #trigger="{ actions }">
         <input
-          class="search border-2 rounded-md w-full py-2 px-3 text-gray-500 focus:outline-none focus:border-red-300"
+          class="search border rounded-md w-full py-2 px-3 text-gray-500 focus:outline-none focus:border-light-primary"
           type="text"
           placeholder="Search Employees"
           v-model="query"
@@ -13,7 +13,7 @@
           class="absolute right-0 top-0 flex items-center h-full mr-3 pointer-events-none"
         >
           <svg
-            class="h-5 w-5 text-red-300"
+            class="h-5 w-5 text-light-primary"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

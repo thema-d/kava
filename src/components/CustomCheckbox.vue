@@ -33,10 +33,10 @@ export default {
 .checkbox {
   @apply border-gray-300;
   &[aria-checked="true"] {
-    @apply border-red-400;
+    @apply border-light-primary;
     &::after {
       content: "";
-      @apply h-1/2 w-1/2 bg-red-400 rounded-full;
+      @apply h-1/2 w-1/2 bg-light-primary rounded-full;
     }
   }
   &.large {

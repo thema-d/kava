@@ -18,8 +18,8 @@
             class="flex flex-col h-56 w-full overflow-y-scroll text-gray-500"
           >
             <button
-              class="py-2 px-4 bg-white focus:outline-none hover:bg-red-400 hover:text-white font-bold"
-              :class="{ 'bg-red-400 text-white': hour == time.hour }"
+              class="py-2 px-4 bg-white focus:outline-none hover:bg-light-primary hover:text-white font-bold"
+              :class="{ 'bg-light-primary text-white': hour == time.hour }"
               v-for="hour in 12"
               :key="'hh' + hour"
               @click="setHour(hour)"
@@ -31,8 +31,8 @@
             class="flex flex-col h-56 w-full overflow-y-scroll text-gray-500"
           >
             <button
-              class="py-2 px-4 bg-white focus:outline-none hover:bg-red-400 hover:text-white font-bold"
-              :class="{ 'bg-red-400 text-white': minute == time.minute }"
+              class="py-2 px-4 bg-white focus:outline-none hover:bg-light-primary hover:text-white font-bold"
+              :class="{ 'bg-light-primary text-white': minute == time.minute }"
               v-for="minute in Array.from({ length: 12 }).map((v, i) => i * 5)"
               :key="'mm' + minute"
               @click="setMinute(minute)"
@@ -42,8 +42,8 @@
           </div>
           <div class="flex flex-col h-56 w-full text-gray-500">
             <button
-              class="py-2 px-4 bg-white focus:outline-none hover:bg-red-400 hover:text-white font-bold"
-              :class="{ 'bg-red-400 text-white': period == time.period }"
+              class="py-2 px-4 bg-white focus:outline-none hover:bg-light-primary hover:text-white font-bold"
+              :class="{ 'bg-light-primary text-white': period == time.period }"
               v-for="period in ['AM', 'PM']"
               :key="'mm' + period"
               @click="setPeriod(period)"
@@ -132,9 +132,9 @@ input[type="text"]::placeholder {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-red-300 rounded-lg;
+  @apply bg-light-primary rounded-lg;
   &:hover {
-    @apply bg-red-400;
+    @apply bg-light-primary;
   }
 }
 </style>

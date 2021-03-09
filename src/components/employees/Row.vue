@@ -45,7 +45,7 @@
       </div>
       <div class="col-span-12 pb-4 grid grid-cols-12">
         <div class="col-span-8">
-          <span class="text-red-400 uppercase text-xs font-bold">Message</span>
+          <span class="text-light-primary uppercase text-xs font-bold">Message</span>
           <p class="text-sm font-medium text-gray-400 pr-4">
             <editable
               class="w-full hover:bg-gray-100"
@@ -56,7 +56,7 @@
           </p>
         </div>
         <div class="col-span-2">
-          <span class="text-red-400 uppercase text-xs font-bold"
+          <span class="text-light-primary uppercase text-xs font-bold"
             >Delivery Date</span
           >
           <div>
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="col-span-2">
-          <span class="text-red-400 uppercase text-xs font-bold"
+          <span class="text-light-primary uppercase text-xs font-bold"
             >Delivery Time</span
           >
           <div>
@@ -87,7 +87,7 @@
     <div class="w-20 flex items-center justify-center">
       <button
         @click="remove(row)"
-        class="w-5 h-5 hidden group-hover:text-red-400 group-hover:block focus:outline-none"
+        class="w-5 h-5 hidden group-hover:text-light-primary group-hover:block focus:outline-none"
       >
         <svg
           class="w-5 h-5"

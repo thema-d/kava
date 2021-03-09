@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-px px-1 border-2 border-transparent focus:border-red-300 rounded-sm outline-none flex items-center"
+    class="py-px px-1 border-2 border-transparent focus:border-light-primary rounded-sm outline-none flex items-center"
     @mouseenter="toggleEditable($event.target, true)"
     @blur="setValue"
     @keypress.enter="setValue"

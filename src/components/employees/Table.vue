@@ -7,7 +7,7 @@
         </div>
         <div class="w-full grid grid-cols-12">
           <div
-            class="px-px py-4 text-left text-xs font-bold text-red-400 uppercase tracking-wider w-full"
+            class="px-px py-4 text-left text-xs font-bold text-light-primary uppercase tracking-wider w-full"
             v-for="(column, idx) in headers"
             :class="columnClasses[idx]"
             :key="column.label"

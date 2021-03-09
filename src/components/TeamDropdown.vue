@@ -7,11 +7,11 @@
       <template #trigger="{ actions }">
         <button
           @click="actions.open()"
-          class="h-full border-2 text-left rounded-md w-full py-2 px-3 text-gray-500 focus:outline-none focus:border-red-300"
+          class="h-full border text-left rounded-md w-full py-2 px-3 text-gray-500 focus:outline-none focus:border-light-primary"
         >
           <span v-if="selectedTeams.length" class="flex space-x-1">
             <span
-              class="py-px px-1 bg-red-400 text-white rounded"
+              class="py-px px-1 bg-light-primary text-white rounded"
               v-for="team in selectedTeams"
               :key="team.id"
               >{{ team.name }}</span
@@ -25,7 +25,7 @@
           class="absolute right-0 top-0 flex items-center h-full mr-3 pointer-events-none"
         >
           <svg
-            class="h-5 w-5 text-red-300"
+            class="h-5 w-5 text-light-primary"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -45,7 +45,7 @@
           <span class="py-2 px-2 w-full">{{ row.name }}</span>
           <svg
             v-if="row.selected"
-            class="w-6 h-6 text-red-400"
+            class="w-6 h-6 text-light-primary"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
