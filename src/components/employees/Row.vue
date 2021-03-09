@@ -45,7 +45,9 @@
       </div>
       <div class="col-span-12 pb-4 grid grid-cols-12">
         <div class="col-span-8">
-          <span class="text-light-primary uppercase text-xs font-bold">Message</span>
+          <span class="text-light-primary uppercase text-xs font-bold"
+            >Message</span
+          >
           <p class="text-sm font-medium text-gray-400 pr-4">
             <editable
               class="w-full hover:bg-gray-100"
